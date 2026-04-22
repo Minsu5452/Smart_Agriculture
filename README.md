@@ -1,52 +1,28 @@
-# 🌾 Smart Agriculture — 2023 스마트농업 AI 경진대회
+# Smart Agriculture
 
-![Host](https://img.shields.io/badge/Host-농림축산식품부-green)
-![BDA](https://img.shields.io/badge/BDA%207기-연관%20활동-blue)
-![Role](https://img.shields.io/badge/Role-팀장-orange)
+2023 스마트농업 AI 경진대회 참여 저장소입니다. 여러 모델 계열을 빠르게 비교해 문제 특성과 검증 전략을 파악하는 데 초점을 둔 실험 기록입니다.
 
-> **농림축산식품부 주최 2023 스마트농업 AI 경진대회** · **BDA 7기 연관 활동**. AutoML · CatBoost · LightGBM · RandomForest 5-model 비교 실험.
+## Snapshot
 
----
+| Item | Detail |
+| --- | --- |
+| Type | Competition project |
+| Period | 2023 |
+| Team | Team lead |
+| Task | 스마트농업 데이터 기반 예측 |
+| Approach | AutoML, CatBoost, LightGBM, Optuna, RandomForest |
+| Result | Participation record |
 
-## 🎯 Competition
+## Work Summary
 
-- **대회**: 2023 스마트농업 AI 경진대회
-- **주최**: 농림축산식품부
-- **연관**: BDA(빅데이터 연합 대외 동아리) 7기 고급반 연관 활동
-- **역할**: 팀장
-- **결과**: 예선 참여
+- 서로 다른 모델 계열을 같은 문제에 적용해 기준선을 비교했습니다.
+- 범주형 처리와 부스팅 계열 성능을 집중적으로 확인했습니다.
+- Optuna 기반 하이퍼파라미터 탐색으로 LightGBM 실험을 확장했습니다.
 
-## 🔍 Overview
+## Repository Layout
 
-- **배경**: 스마트농업에서 AI 모델 성능 경쟁. 다양한 ML 모델 비교·앙상블로 일반화 성능 확보가 핵심.
-- **문제**: 농작물/환경 데이터 기반 회귀·분류 예측.
-
-## 🧠 Approach — 5-Model Benchmark
-
-| 모델 | 목적 |
-|------|------|
-| **AutoML** | Baseline 성능 확보 |
-| **CatBoost** | 범주형 특성 강점 |
-| **LightGBM** | 빠른 학습·효율성 |
-| **LightGBM + Optuna** | 하이퍼파라미터 최적화 |
-| **RandomForest** | 비교 모델 |
-
-## 📁 Structure
-
-```
-Smart_Agriculture/
-├── Modeling_AutoML.ipynb
-├── Modeling_Catboost.ipynb
-├── Modeling_LGBM.ipynb
-├── Modeling_LGBM_Optuna.ipynb   # Optuna hyperparameter tuning
-├── Modeling_RandomForest.ipynb
-└── README.md
-```
-
-## 🛠 Tech Stack
-
-- Python · CatBoost · LightGBM · scikit-learn · Optuna · AutoML · Jupyter
-
----
-
-> 🔗 Portfolio: [Minsu5452](https://github.com/Minsu5452)
+- `Modeling_AutoML.ipynb`
+- `Modeling_Catboost.ipynb`
+- `Modeling_LGBM.ipynb`
+- `Modeling_LGBM_Optuna.ipynb`
+- `Modeling_RandomForest.ipynb`
